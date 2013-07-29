@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EBDD1E01793A7AD0030281A /* SubTitleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDD1DF1793A7AC0030281A /* SubTitleController.m */; };
+		5EBDD1E61793F41D0030281A /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDD1E51793F41D0030281A /* MyCell.m */; };
+		5EE08B7F1797840300EAA135 /* Page3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE08B7E1797840300EAA135 /* Page3ViewController.m */; };
 		5EF1E2B81793891D00E12839 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF1E2B71793891C00E12839 /* UIKit.framework */; };
 		5EF1E2BA1793891D00E12839 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF1E2B91793891D00E12839 /* Foundation.framework */; };
 		5EF1E2BC1793891D00E12839 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5EF1E2BB1793891D00E12839 /* CoreGraphics.framework */; };
@@ -17,15 +20,19 @@
 		5EF1E2CC1793891D00E12839 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2CB1793891D00E12839 /* Default@2x.png */; };
 		5EF1E2CE1793891D00E12839 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2CD1793891D00E12839 /* Default-568h@2x.png */; };
 		5EF1E2D11793891D00E12839 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2CF1793891D00E12839 /* MainStoryboard.storyboard */; };
-		5EF1E2D41793891D00E12839 /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF1E2D31793891D00E12839 /* FirstViewController.m */; };
 		5EF1E2D61793891D00E12839 /* first.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2D51793891D00E12839 /* first.png */; };
 		5EF1E2D81793891D00E12839 /* first@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2D71793891D00E12839 /* first@2x.png */; };
-		5EF1E2DB1793891D00E12839 /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EF1E2DA1793891D00E12839 /* SecondViewController.m */; };
 		5EF1E2DD1793891D00E12839 /* second.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2DC1793891D00E12839 /* second.png */; };
 		5EF1E2DF1793891D00E12839 /* second@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5EF1E2DE1793891D00E12839 /* second@2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5EBDD1DE1793A7AC0030281A /* SubTitleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTitleController.h; sourceTree = "<group>"; };
+		5EBDD1DF1793A7AC0030281A /* SubTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTitleController.m; sourceTree = "<group>"; };
+		5EBDD1E41793F41D0030281A /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
+		5EBDD1E51793F41D0030281A /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		5EE08B7D1797840300EAA135 /* Page3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page3ViewController.h; sourceTree = "<group>"; };
+		5EE08B7E1797840300EAA135 /* Page3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page3ViewController.m; sourceTree = "<group>"; };
 		5EF1E2B41793891C00E12839 /* TabbarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EF1E2B71793891C00E12839 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		5EF1E2B91793891D00E12839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -40,12 +47,8 @@
 		5EF1E2CB1793891D00E12839 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5EF1E2CD1793891D00E12839 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		5EF1E2D01793891D00E12839 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		5EF1E2D21793891D00E12839 /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
-		5EF1E2D31793891D00E12839 /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
 		5EF1E2D51793891D00E12839 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		5EF1E2D71793891D00E12839 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
-		5EF1E2D91793891D00E12839 /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
-		5EF1E2DA1793891D00E12839 /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		5EF1E2DC1793891D00E12839 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
 		5EF1E2DE1793891D00E12839 /* second@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "second@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -64,6 +67,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EBDD1E11793F16B0030281A /* 3rd */ = {
+			isa = PBXGroup;
+			children = (
+				5EBDD1DE1793A7AC0030281A /* SubTitleController.h */,
+				5EBDD1DF1793A7AC0030281A /* SubTitleController.m */,
+				5EBDD1E41793F41D0030281A /* MyCell.h */,
+				5EBDD1E51793F41D0030281A /* MyCell.m */,
+				5EE08B7D1797840300EAA135 /* Page3ViewController.h */,
+				5EE08B7E1797840300EAA135 /* Page3ViewController.m */,
+			);
+			name = 3rd;
+			sourceTree = "<group>";
+		};
+		5EE08B801797D06200EAA135 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				5EF1E2D51793891D00E12839 /* first.png */,
+				5EF1E2D71793891D00E12839 /* first@2x.png */,
+				5EF1E2DC1793891D00E12839 /* second.png */,
+				5EF1E2DE1793891D00E12839 /* second@2x.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		5EF1E2AB1793891C00E12839 = {
 			isa = PBXGroup;
 			children = (
@@ -97,15 +124,9 @@
 				5EF1E2C61793891D00E12839 /* AppDelegate.h */,
 				5EF1E2C71793891D00E12839 /* AppDelegate.m */,
 				5EF1E2CF1793891D00E12839 /* MainStoryboard.storyboard */,
-				5EF1E2D21793891D00E12839 /* FirstViewController.h */,
-				5EF1E2D31793891D00E12839 /* FirstViewController.m */,
-				5EF1E2D51793891D00E12839 /* first.png */,
-				5EF1E2D71793891D00E12839 /* first@2x.png */,
-				5EF1E2D91793891D00E12839 /* SecondViewController.h */,
-				5EF1E2DA1793891D00E12839 /* SecondViewController.m */,
-				5EF1E2DC1793891D00E12839 /* second.png */,
-				5EF1E2DE1793891D00E12839 /* second@2x.png */,
+				5EE08B801797D06200EAA135 /* Images */,
 				5EF1E2BE1793891D00E12839 /* Supporting Files */,
+				5EBDD1E11793F16B0030281A /* 3rd */,
 			);
 			path = TabbarTest;
 			sourceTree = "<group>";
@@ -196,8 +217,9 @@
 			files = (
 				5EF1E2C41793891D00E12839 /* main.m in Sources */,
 				5EF1E2C81793891D00E12839 /* AppDelegate.m in Sources */,
-				5EF1E2D41793891D00E12839 /* FirstViewController.m in Sources */,
-				5EF1E2DB1793891D00E12839 /* SecondViewController.m in Sources */,
+				5EBDD1E01793A7AD0030281A /* SubTitleController.m in Sources */,
+				5EBDD1E61793F41D0030281A /* MyCell.m in Sources */,
+				5EE08B7F1797840300EAA135 /* Page3ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,6 +340,7 @@
 				5EF1E2E41793891D00E12839 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
