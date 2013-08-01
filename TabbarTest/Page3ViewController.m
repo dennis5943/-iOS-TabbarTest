@@ -8,8 +8,11 @@
 
 #import "Page3ViewController.h"
 #import "MyCell.h"
+#import "TableData.h"
 
 @interface Page3ViewController ()
+
+@property(nonatomic,retain) NSMutableArray *tableItems;
 
 @end
 
@@ -17,7 +20,7 @@
 
 - (id)initWithStyle:(UITableViewStyle)style
 {
-    self = [super initWithStyle:style];
+    self = [super initWithStyle:UITableViewStylePlain];
     if (self) {
         // Custom initialization
     }
@@ -28,6 +31,14 @@
 {
     [super viewDidLoad];
     
+    self.tableItems = [[NSMutableArray alloc]init];
+    for(int i = 0;i < 30;i++)
+    {        
+        NSString *title = [NSString stringWithFormat:@"Title %d",i];
+        NSString *subtitle = [NSString stringWithFormat:@"SubTitle %d",i];
+        [self.tableItems addObject:[TableData ItemWithTitle:title SubTitle:subtitle]];
+    }
+    //self.tableItems addObject:[TableData ItemWithTitle:@"Title" SubTitle:<#(NSString *)#>]
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
@@ -54,7 +65,7 @@
 {
 #warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 15;
+    return [self.tableItems count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -67,8 +78,8 @@
         cell = [[MyCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
     
     // Configure the cell...
-    [cell.titleView setText:@"title"];
-  
+    [cell.titleView setText:[self.tableItems[indexPath.row] Title]];
+    [cell setTag:indexPath.row];
     return cell;
 }
 
@@ -128,7 +139,8 @@
 #pragma mark - MyCellDelegate
 -(void)OnMyCustomViewCellButtonClicked:(id)sender cell:(MyCell *)cell
 {
-    [cell.titleView setText:@"change"];
+    [self.tableItems[cell.tag] setTitle:@"change"];
+    [cell.titleView setText:[self.tableItems[cell.tag] Title]];
     [[self.tabBarController.tabBar.items objectAtIndex:2] setBadgeValue:@"N"];
 }
 

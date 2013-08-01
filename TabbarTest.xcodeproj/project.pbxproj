@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5E83821A17AA4BA600DF7DC6 /* TableData.m in Sources */ = {isa = PBXBuildFile; fileRef = 5E83821917AA4BA600DF7DC6 /* TableData.m */; };
 		5EBDD1E01793A7AD0030281A /* SubTitleController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDD1DF1793A7AC0030281A /* SubTitleController.m */; };
 		5EBDD1E61793F41D0030281A /* MyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EBDD1E51793F41D0030281A /* MyCell.m */; };
 		5EE08B7F1797840300EAA135 /* Page3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5EE08B7E1797840300EAA135 /* Page3ViewController.m */; };
@@ -27,6 +28,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5E83821817AA4BA600DF7DC6 /* TableData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TableData.h; sourceTree = "<group>"; };
+		5E83821917AA4BA600DF7DC6 /* TableData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TableData.m; sourceTree = "<group>"; };
 		5EBDD1DE1793A7AC0030281A /* SubTitleController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubTitleController.h; sourceTree = "<group>"; };
 		5EBDD1DF1793A7AC0030281A /* SubTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTitleController.m; sourceTree = "<group>"; };
 		5EBDD1E41793F41D0030281A /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				5EBDD1E51793F41D0030281A /* MyCell.m */,
 				5EE08B7D1797840300EAA135 /* Page3ViewController.h */,
 				5EE08B7E1797840300EAA135 /* Page3ViewController.m */,
+				5E83821817AA4BA600DF7DC6 /* TableData.h */,
+				5E83821917AA4BA600DF7DC6 /* TableData.m */,
 			);
 			name = 3rd;
 			sourceTree = "<group>";
@@ -220,6 +225,7 @@
 				5EBDD1E01793A7AD0030281A /* SubTitleController.m in Sources */,
 				5EBDD1E61793F41D0030281A /* MyCell.m in Sources */,
 				5EE08B7F1797840300EAA135 /* Page3ViewController.m in Sources */,
+				5E83821A17AA4BA600DF7DC6 /* TableData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
