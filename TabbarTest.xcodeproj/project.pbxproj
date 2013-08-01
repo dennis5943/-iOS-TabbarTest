@@ -73,8 +73,6 @@
 		5EBDD1E11793F16B0030281A /* 3rd */ = {
 			isa = PBXGroup;
 			children = (
-				5EBDD1DE1793A7AC0030281A /* SubTitleController.h */,
-				5EBDD1DF1793A7AC0030281A /* SubTitleController.m */,
 				5EBDD1E41793F41D0030281A /* MyCell.h */,
 				5EBDD1E51793F41D0030281A /* MyCell.m */,
 				5EE08B7D1797840300EAA135 /* Page3ViewController.h */,
@@ -129,6 +127,8 @@
 				5EF1E2C61793891D00E12839 /* AppDelegate.h */,
 				5EF1E2C71793891D00E12839 /* AppDelegate.m */,
 				5EF1E2CF1793891D00E12839 /* MainStoryboard.storyboard */,
+				5EBDD1DE1793A7AC0030281A /* SubTitleController.h */,
+				5EBDD1DF1793A7AC0030281A /* SubTitleController.m */,
 				5EE08B801797D06200EAA135 /* Images */,
 				5EF1E2BE1793891D00E12839 /* Supporting Files */,
 				5EBDD1E11793F16B0030281A /* 3rd */,
