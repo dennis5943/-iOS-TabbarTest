@@ -38,12 +38,12 @@
         NSString *subtitle = [NSString stringWithFormat:@"SubTitle %d",i];
         [self.tableItems addObject:[TableData ItemWithTitle:title SubTitle:subtitle]];
     }
-    //self.tableItems addObject:[TableData ItemWithTitle:@"Title" SubTitle:<#(NSString *)#>]
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    [self.editButtonItem setTitle:@"編輯"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,14 +83,14 @@
     return cell;
 }
 
-/*
+
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
 }
-*/
+
 
 /*
 // Override to support editing the table view.
@@ -113,14 +113,14 @@
 }
 */
 
-/*
+
 // Override to support conditional rearranging of the table view.
 - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
 {
     // Return NO if you do not want the item to be re-orderable.
     return YES;
 }
-*/
+
 
 #pragma mark - Table view delegate
 
