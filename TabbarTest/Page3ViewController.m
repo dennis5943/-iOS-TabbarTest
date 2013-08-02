@@ -14,6 +14,8 @@
 
 @property(nonatomic,retain) NSMutableArray *tableItems;
 
+
+
 @end
 
 @implementation Page3ViewController
@@ -43,7 +45,7 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newItemClick:)];
 }
 
 - (void)didReceiveMemoryWarning
@@ -56,14 +58,12 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
     return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
     return [self.tableItems count];
 }
@@ -91,8 +91,6 @@
     return YES;
 }
 
-
-
 // Override to support editing the table view.
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
 {
@@ -113,6 +111,16 @@
     TableData *from = [self.tableItems objectAtIndex:fromIndexPath.row];
     [self.tableItems removeObjectAtIndex:fromIndexPath.row];
     [self.tableItems insertObject:from atIndex:toIndexPath.row];
+}
+
+// New ItemClick
+-(IBAction)newItemClick:(id)sender
+{
+    NSString *title = [NSString stringWithFormat:@"Title %d",self.tableItems.count];
+    NSString *subtitle = [NSString stringWithFormat:@"SubTitle %d",self.tableItems.count];
+    TableData *data = [TableData ItemWithTitle:title SubTitle:subtitle];
+    [self.tableItems addObject:data];
+    [self.tableView reloadData];
 }
 
 // Override to support conditional rearranging of the table view.

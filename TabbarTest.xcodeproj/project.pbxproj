@@ -34,6 +34,8 @@
 		5EBDD1DF1793A7AC0030281A /* SubTitleController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubTitleController.m; sourceTree = "<group>"; };
 		5EBDD1E41793F41D0030281A /* MyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCell.h; sourceTree = "<group>"; };
 		5EBDD1E51793F41D0030281A /* MyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCell.m; sourceTree = "<group>"; };
+		5ED040A917AB5F420044009E /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/MainStoryboard.storyboard"; sourceTree = "<group>"; };
+		5ED040AA17AB5F420044009E /* zh-Hant-TW */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant-TW"; path = "zh-Hant-TW.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		5EE08B7D1797840300EAA135 /* Page3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Page3ViewController.h; sourceTree = "<group>"; };
 		5EE08B7E1797840300EAA135 /* Page3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Page3ViewController.m; sourceTree = "<group>"; };
 		5EF1E2B41793891C00E12839 /* TabbarTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TabbarTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,7 +43,6 @@
 		5EF1E2B91793891D00E12839 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		5EF1E2BB1793891D00E12839 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		5EF1E2BF1793891D00E12839 /* TabbarTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabbarTest-Info.plist"; sourceTree = "<group>"; };
-		5EF1E2C11793891D00E12839 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5EF1E2C31793891D00E12839 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5EF1E2C51793891D00E12839 /* TabbarTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TabbarTest-Prefix.pch"; sourceTree = "<group>"; };
 		5EF1E2C61793891D00E12839 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -49,7 +50,6 @@
 		5EF1E2C91793891D00E12839 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5EF1E2CB1793891D00E12839 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5EF1E2CD1793891D00E12839 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5EF1E2D01793891D00E12839 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		5EF1E2D51793891D00E12839 /* first.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = first.png; sourceTree = "<group>"; };
 		5EF1E2D71793891D00E12839 /* first@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "first@2x.png"; sourceTree = "<group>"; };
 		5EF1E2DC1793891D00E12839 /* second.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = second.png; sourceTree = "<group>"; };
@@ -185,6 +185,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				"zh-Hant-TW",
 			);
 			mainGroup = 5EF1E2AB1793891C00E12839;
 			productRefGroup = 5EF1E2B51793891C00E12839 /* Products */;
@@ -235,7 +236,7 @@
 		5EF1E2C01793891D00E12839 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5EF1E2C11793891D00E12839 /* en */,
+				5ED040AA17AB5F420044009E /* zh-Hant-TW */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -243,7 +244,7 @@
 		5EF1E2CF1793891D00E12839 /* MainStoryboard.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				5EF1E2D01793891D00E12839 /* en */,
+				5ED040A917AB5F420044009E /* zh-Hant-TW */,
 			);
 			name = MainStoryboard.storyboard;
 			sourceTree = "<group>";
