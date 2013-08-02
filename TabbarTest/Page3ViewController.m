@@ -44,8 +44,8 @@
     // self.clearsSelectionOnViewWillAppear = NO;
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newItemClick:)];
+    self.navigationItem.rightBarButtonItem = self.editButtonItem;    
+    [self.editButtonItem setTitle:@"編輯"];
 }
 
 - (void)didReceiveMemoryWarning
@@ -89,6 +89,24 @@
 {
     // Return NO if you do not want the specified item to be editable.
     return YES;
+}
+
+-(void)setEditing:(BOOL)editing animated:(BOOL)animated
+{
+    [super setEditing:editing animated:animated];
+    
+    if(self.tableView.editing)
+    {
+        [self.editButtonItem setTitle:@"關閉"];
+        UIBarButtonItem *btn = [[UIBarButtonItem alloc]initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(newItemClick:)];
+        [self.navigationItem setLeftBarButtonItem:btn animated:YES];
+        [btn release];
+    }
+    else
+    {
+        [self.navigationItem setLeftBarButtonItem:nil animated:YES];
+        [self.editButtonItem setTitle:@"編輯"];
+    }
 }
 
 // Override to support editing the table view.

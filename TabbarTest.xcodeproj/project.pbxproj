@@ -129,9 +129,9 @@
 				5EF1E2CF1793891D00E12839 /* MainStoryboard.storyboard */,
 				5EBDD1DE1793A7AC0030281A /* SubTitleController.h */,
 				5EBDD1DF1793A7AC0030281A /* SubTitleController.m */,
+				5EBDD1E11793F16B0030281A /* 3rd */,
 				5EE08B801797D06200EAA135 /* Images */,
 				5EF1E2BE1793891D00E12839 /* Supporting Files */,
-				5EBDD1E11793F16B0030281A /* 3rd */,
 			);
 			path = TabbarTest;
 			sourceTree = "<group>";
